@@ -586,7 +586,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
    },
    {
       BEETLE_OPT(use_mednafen_memcard0_method),
-      "Memory Card 0 Method (Restart)",
+      "Memory Card 0 Method (Restart Required)",
       NULL,
       "Choose the save data format used for memory card 0. 'Mednafen' may be used for compatibility with the stand-alone version of Mednafen. When used with Beetle PSX, Libretro (.srm) and Mednafen (.mcr) saves have internally identical formats and can be converted between one another via renaming.",
       NULL,
@@ -600,7 +600,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
    },
    {
       BEETLE_OPT(enable_memcard1),
-      "Enable Memory Card 1 (Restart)",
+      "Enable Memory Card 1 (Restart Required)",
       NULL,
       "Select whether to emulate a second memory card in slot 1. When disabled, games can only access the memory card in slot 0. Note: Some games require this option to be disabled for correct operation (e.g. Codename Tenka). Note: Memory Card 1 uses the Mednafen (.mcr) save format.",
       NULL,
@@ -614,7 +614,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
    },
    {
       BEETLE_OPT(shared_memory_cards),
-      "Shared Memory Cards (Restart)",
+      "Shared Memory Cards (Restart Required)",
       NULL,
       "When enabled, all games will save to and load from the same memory card files. When disabled, separate memory card files will be generated for each item of loaded content. Note: if 'Memory Card 0 Method' is set to 'Libretro', only the right memory card will be affected.",
       NULL,
@@ -1582,7 +1582,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
 #ifndef EMSCRIPTEN
    {
       BEETLE_OPT(cd_access_method),
-      "CD Access Method (Restart)",
+      "CD Access Method (Restart Required)",
       NULL,
       "Select method used to read data from content disk images. 'Synchronous' mimics original hardware. 'Asynchronous' can reduce stuttering on devices with slow storage. 'Pre-Cache' loads the entire disk image into memory when launching content which may improve in-game loading times at the cost of an initial delay at startup. 'Pre-Cache' may cause issues on systems with low RAM, and will fall back to 'Synchronous' for physical media",
       NULL,
