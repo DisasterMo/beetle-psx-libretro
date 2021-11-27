@@ -1036,7 +1036,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
 #if defined(HAVE_OPENGL) || defined(HAVE_OPENGLES) || defined(HAVE_VULKAN)
    {
       BEETLE_OPT(renderer),
-      "Renderer (Restart)",
+      "Renderer (Restart Required)",
       NULL,
       "Choose video renderer. The software renderer is the most accurate but has steep performance requirements when running at increased internal GPU resolutions. The hardware renderers, while less accurate, improve performance over the software renderer at increased internal resolutions and enable various graphical enhancements. 'Hardware (Auto)' automatically selects the Vulkan or OpenGL renderer depending upon the current libretro frontend video driver. If the provided video driver is not Vulkan or OpenGL 3.3-compatible then the core will fall back to the software renderer.",
       NULL,
@@ -1104,7 +1104,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
       BEETLE_OPT(dynarec_eventcycles),
       "Dynarec DMA/GPU Event Cycles",
       NULL,
-      "Max cycles run by CPU before a GPU or DMA Update is checked, higher number will be faster, has much less impact on beetle interpreter than dynarec",
+      "Max cycles run by CPU before a GPU or DMA Update is checked, higher number will be faster, has much less impact on beetle interpreter than dynarec.",
       NULL,
       NULL,
       {
